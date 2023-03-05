@@ -1,0 +1,30 @@
+GET / HTTP/1.0
+
+
+GET /backend2/ HTTP/1.1
+Host: u52984.kubsu-dev.ru
+
+
+HEAD /backend2/file.tar.gz HTTP/1.1
+Host: u52984.kubsu-dev.ru
+
+
+HEAD /backend2/image.png HTTP/1.1
+Host: u52984.kubsu-dev.ru
+
+
+POST /backend2/index.php HTTP/1.1
+Host: u52984.kubsu-dev.ru
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+field1=value1&field2=value2
+
+GET /backend2/file.tar.gz HTTP/1.1
+Host: u52984.kubsu-dev.ru
+Range: bytes=0-99
+
+
+HEAD /backend2/index.php HTTP/1.1
+Host: u52984.kubsu-dev.ru
+
